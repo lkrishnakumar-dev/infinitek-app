@@ -3,53 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>InfiniteK</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="InfiniteK builds AI-powered applications for health, fitness, productivity, and everyday growth. Discover Strivio, our intelligent fitness and nutrition platform." />
+  <meta name="theme-color" content="#070812" />
+  <title>InfiniteK — Intelligent Apps for Everyday Life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <div class="site-bg" aria-hidden="true"><span></span><span></span><span></span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="InfiniteK home"><span class="brand-mark">∞</span><span>InfiniteK</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
   <main>
-    <section class="hero">
-      <p class="eyebrow">InfiniteK Apps</p>
-      <h1>Building intelligent apps for health, fitness, and everyday growth.</h1>
-      <p class="subtitle">
-        InfiniteK creates simple, powerful apps that help people train better, eat smarter,
-        stay consistent, and improve daily.
-      </p>
-    </section>
-
-    <section class="apps">
-      <div class="card">
-        <span class="badge">Fitness & Nutrition</span>
-        <h2>Strivio</h2>
-        <p>
-          Your AI-powered fitness companion for workouts, nutrition, progress tracking,
-          daily motivation, and smarter health insights.
-        </p>
-
-        <div class="buttons">
-          <a href="#" class="button">Download on App Store</a>
-          <a href="#" class="button secondary">Get it on Google Play</a>
+    <section id="home" class="hero section">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Independent software studio</p>
+          <h1>Building Intelligent Apps for Everyday Life</h1>
+          <p class="hero-subtitle">InfiniteK builds AI-powered applications that help people improve their health, productivity, and everyday life through beautiful experiences and intelligent technology.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">Explore Products</a>
+            <a class="btn secondary" href="support.html">Contact Us</a>
+          </div>
         </div>
-      </div>
-
-      <div class="card">
-        <span class="badge">Coming Soon</span>
-        <h2>Infinite</h2>
-        <p>
-          A new AI-first app experience designed around goals, actions, and intelligent
-          daily assistance.
-        </p>
-
-        <div class="buttons">
-          <a href="#" class="button disabled">Coming Soon</a>
+        <div class="hero-art reveal delay-1" aria-label="Abstract InfiniteK product interface preview">
+          <div class="orbital-card main-card">
+            <div class="pulse-dot"></div>
+            <h2>Strivio</h2>
+            <p>AI fitness, nutrition, hydration, progress, and health insights.</p>
+            <div class="mini-stats"><span>Workouts</span><strong>26</strong></div>
+            <div class="mini-stats"><span>Meal logs</span><strong>145</strong></div>
+            <div class="progress-line"><i style="width:78%"></i></div>
+          </div>
+          <div class="floating-chip chip-one">AI Coach</div>
+          <div class="floating-chip chip-two">Cloud Sync</div>
+          <div class="floating-chip chip-three">Health Insights</div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <p>© 2026 InfiniteK. All rights reserved.</p>
-      <a href="mailto:support@infinitek.app">support@infinitek.app</a>
-    </footer>
+    <section id="about" class="section narrow reveal">
+      <p class="eyebrow">About InfiniteK</p>
+      <h2 class="section-title">Software designed around people, privacy, and progress.</h2>
+      <p class="section-text">InfiniteK is an independent software company focused on creating intelligent mobile applications powered by modern technologies including AI. We care about privacy-first design, beautiful interfaces, performance, reliability, and continuous innovation.</p>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Products</p>
+        <h2 class="section-title">Flagship apps built for real daily use.</h2>
+      </div>
+
+      <article class="product-showcase strivio reveal">
+        <div class="product-copy">
+          <span class="status available">Available</span>
+          <h3>Strivio</h3>
+          <p>Strivio is an AI-powered fitness and nutrition platform that helps users train smarter, eat better, stay hydrated, and stay consistent.</p>
+          <div class="download-row">
+            <a class="store-btn" href="#" aria-label="Download Strivio on the App Store"><span>Download on the</span><strong>App Store</strong></a>
+            <a class="store-btn outline" href="#" aria-label="Get Strivio on Google Play"><span>Get it on</span><strong>Google Play</strong></a>
+          </div>
+        </div>
+        <div class="device-stage" aria-hidden="true">
+          <div class="phone phone-left"><div class="phone-screen"><span>Workout Plan</span><strong>Push Day</strong><div class="bars"><i></i><i></i><i></i></div></div></div>
+          <div class="phone phone-right"><div class="phone-screen"><span>Daily Summary</span><strong>1,850 kcal</strong><div class="rings"><i></i><i></i></div></div></div>
+        </div>
+      </article>
+
+      <div class="feature-grid reveal">
+        <div class="feature-card"><h4>AI Coach</h4><p>Personalized guidance based on your activity, consistency, and progress.</p></div>
+        <div class="feature-card"><h4>Workout Tracking</h4><p>Track sets, reps, volume, routines, calendar history, and weekly progress.</p></div>
+        <div class="feature-card"><h4>Nutrition Logging</h4><p>Log meals, calories, protein, carbs, fats, templates, and diet insights.</p></div>
+        <div class="feature-card"><h4>Water Tracking</h4><p>Stay hydrated with simple water logging and daily progress reminders.</p></div>
+        <div class="feature-card"><h4>Health Insights</h4><p>Bring together steps, sleep, activity, and wellness summaries.</p></div>
+        <div class="feature-card"><h4>Progress Analytics</h4><p>Understand body measurements, muscle focus, trends, and weekly summaries.</p></div>
+        <div class="feature-card"><h4>Workout Planning</h4><p>Plan your week, organize workout days, and build consistent routines.</p></div>
+        <div class="feature-card"><h4>Meal Templates</h4><p>Save repeat meals and log faster with reusable meal templates.</p></div>
+        <div class="feature-card"><h4>Smart Reminders</h4><p>Stay consistent with reminders for water, meals, walking, and workouts.</p></div>
+      </div>
+
+      <article class="product-showcase infinite reveal">
+        <div class="product-copy">
+          <span class="status soon">Coming Soon</span>
+          <h3>Infinite</h3>
+          <p>Infinite is our next-generation AI-first productivity platform built around autonomous agents, intelligent workflows, and natural language interaction.</p>
+          <a class="btn secondary disabled" href="#" aria-disabled="true">Coming Soon</a>
+        </div>
+        <div class="futuristic-art" aria-hidden="true"><span></span><span></span><span></span></div>
+      </article>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Why InfiniteK</p>
+        <h2 class="section-title">Built with care from product idea to daily experience.</h2>
+      </div>
+      <div class="why-grid">
+        <div><h4>Beautiful Design</h4><p>Modern interfaces that feel simple, premium, and focused.</p></div>
+        <div><h4>Privacy First</h4><p>User trust is treated as a product feature, not an afterthought.</p></div>
+        <div><h4>AI Powered</h4><p>Intelligence that helps users act, learn, and improve.</p></div>
+        <div><h4>Cross Platform</h4><p>Built for iOS, Android, and cloud-backed experiences.</p></div>
+        <div><h4>Cloud Sync</h4><p>Reliable account-based sync for continuity across devices.</p></div>
+        <div><h4>Continuous Innovation</h4><p>Products evolve through testing, feedback, and thoughtful iteration.</p></div>
+      </div>
+    </section>
+
+    <section class="section tech-section reveal">
+      <p class="eyebrow">Technology</p>
+      <div class="tech-badges" aria-label="Technologies used by InfiniteK">
+        <span>SwiftUI</span><span>Firebase</span><span>Cloud Functions</span><span>AI</span><span>Core ML</span><span>HealthKit</span><span>Google Fit</span><span>StoreKit</span>
+      </div>
+    </section>
+
+    <section class="mission section reveal">
+      <h2>Our mission is to build software that helps millions of people improve their daily lives through intelligent, elegant, and privacy-focused applications.</h2>
+    </section>
+
+    <section class="support-cta section reveal">
+      <p class="eyebrow">Support</p>
+      <h2>Need help or want to reach us?</h2>
+      <p>Email us at <a href="mailto:support@infinitek.app">support@infinitek.app</a></p>
+      <div class="hero-actions centered"><a class="btn primary" href="support.html">Contact Us</a><a class="btn secondary" href="support.html#faq">FAQ</a></div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div><a class="brand" href="index.html"><span class="brand-mark">∞</span><span>InfiniteK</span></a><p>© InfiniteK. All rights reserved.</p></div>
+    <nav aria-label="Footer navigation"><a href="#products">Strivio</a><a href="#products">Infinite</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="support.html#disclaimer">Disclaimer</a><a href="delete-account.html">Delete Account</a></nav>
+  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
